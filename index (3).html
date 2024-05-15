@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мій сайт</title>
+  <link rel="stylesheet" href="Kurtanych Karina styles.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Наш Сайт</h1>
+      <nav>
+        <ul>
+      <li><a href="karinamain.html">Головна</a></li>
+      <li><a href="karinaabout.html">Про нас</a></li>
+      <li><a href="karinacontacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Реєстрація</title>
+</head>
+
+  <main>
+    <style type="text/css">
+    body {
+  font-family: Comic Sans MS, sans-serif;
+  margin: 0;
+  padding: 0;
+ }
+ .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255, 99, 71, 0.6);
+}
+
+.modal-content {
+  background-color: #dc143c;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #dc143c;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: mauve;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #000090; /* Синій колір при наведенні */
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .menu {
+  flex: 1;
+}
+
+footer .menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .menu ul li {
+  margin-bottom: 10px;
+}
+
+footer .menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.flex-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.block {
+  flex: 1;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #dc143c;
+}
+
+.block h3 {
+  color: #fff;
+  }
+ h1 {
+  text-align: center;
+}
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+a {
+  text-decoration: none;
+  color: #008CBA;
+}
+.newspaper {
+  column-count: 3;
+}
+</style>
+
+<h1>Популярні напрямки</h1>
+   
+  </main>
+      <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+   <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://planetofhotels.com/guide/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/London-3.jpg" alt="0" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://planetofhotels.com/guide/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/rome_0.jpg" alt="1" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://gth.ua/wp/wp-content/uploads/elementor/thumbs/sey-1-pow0gq4i7oko61ikgl7q2w4tk7i5pyre1po5bkecmo.jpg" alt="2" class="d-block" style="width:100%">
+    </div>
+
+
+  <button id="openModalBtn">Click</button>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>This is a modal window</p>
+  </div>
+</div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<ul>
+  <li>ЛОНДОН</li>
+  <li>РИМ</li>
+  <li>СЕЙШЕЛИ</li>
+</ul> 
+  <footer>
+    <head>
+
+</head>
+<body>
+
+<div>
+  <h1>VENERA</h1>
+  <div class="newspaper">
+  <p>VENERA – найсучасніша туристична компанія. 
+Добрий день! Ви знаходитесь на туристичному порталі України VENERA, який створений для того, щоб ваші подорожі були цікавими, комфортними та вигідними. Ми ретельно і з великим натхненням наповнюємо наш портал оповіданнями та корисними порадами про всі країни світу, створюємо міні-путівники по найцікавіших містах, що назавжди залишаються в пам'яті. 
+
+Найнезвичайніші екскурсії, мальовничі країни та цікаві тури і звичайно ж горящі тури – для вас!
+Ми працюємо виключно для вашої вигоди та комфорту.
+
+Кожен з нас чудово знає, як хочеться подорожувати одночасно з комфортом, масою позитивних емоцій і при цьому не спустошивши свій банківський рахунок. VENERA надаємо своїм відвідувачам цю можливість!
+
+Крім того, наша важлива позиція – не працювати з посередниками.
+
+Ми намагаємося зробити так, щоб інформація на порталі VENERA завжди була актуальною та корисною для вас!
+
+Зробіть вигідний вибір з VENERA – та повертайтеся з подорожей до нас, планувати нові!
+  </p></div>
+  
+  <section id="contact">
+    <h2>Контакти</h2>
+    <p>Наші дані:</p>
+    <ul>
+<li>Email: karinka.1126@gmail.com</li>
+      <li>Телефон: +380 095 250 32 44</li>
+      <li><a href="https://www.instagram.com/karina.kurtanych/">Instagram</a></li>
+    </ul>
+  </section>
+</div>
+
+</body>
+</html>
